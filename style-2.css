@@ -1,0 +1,114 @@
+/* CSS reset */
+*{
+	margin: 0;
+	padding: o;
+}
+
+/* Navigation bar */
+#navbar{
+	display: flex;
+	align-items: center;
+	position: sticky;
+	top: 0px;
+}
+#logo{
+	margin: 10px 25px;
+}
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+    filter: invert(100%);
+}
+#navbar ul{
+	display: flex;
+}
+#navbar ul li{
+	list-style: none;
+	font-size: 1.3rem;
+}
+#navbar ul li a{
+	text-decoration: none;
+	padding: 12px 22px;
+	border-radius: 7px;
+	display: block;
+	font-family: sans-serif;
+	color: white;
+}
+#navbar ul li a:hover{
+	color: red;
+	background-color: black;
+}
+#navbar::before{
+	content: "";
+	background-color: black;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	opacity: 0.5;
+}
+
+/* Home Section */
+#home{
+	display: flex;
+	flex-direction: column;
+	padding: 3px 200px;
+	height: 400px;
+	justify-content: center;
+	align-items: center;
+}
+
+#home::before{
+	content: "";
+	background: url('C:/Users/786/Pictures/Saved Pictures/workout/Positivity.jpg') no-repeat center center/cover;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	opacity: 0.89;
+}
+
+#home h1{
+	color: white;
+	text-align: center;
+}
+
+#home p{
+	color: white;
+	text-align: center;
+	font-size: 1.5rem;
+}
+/*Services Section*/
+#services{
+	margin: 34px;
+	display: flex;
+}
+
+#services .box{
+	border: 2px solid blue;
+}
+
+#services .box img{
+	height: 160px;
+}
+/*Utility Classes*/
+.primary{
+	font-size: 3.8rem;
+	padding: 12px;
+}
+
+.h-secondary{
+	font-size: 2.8rem;
+	padding: 12px;
+}
+
+.btn{
+	padding: 6px 20px;
+	border: 2px solid white;
+	background-color: green;
+	color: white;
+	margin: 17px;
+	font-size: 1.5rem;
+	border-radius: 10px;
+	cursor: pointer;
+}
